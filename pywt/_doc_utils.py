@@ -28,6 +28,7 @@ def wavedec2_keys(level):
     approx = ''
     coeffs = {}
     for lev in range(level):
+        print(lev)
         for k in ['a', 'h', 'v', 'd']:
             coeffs[approx + k] = None
         approx = 'a' * (lev + 1)
